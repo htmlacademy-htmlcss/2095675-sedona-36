@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Валерия Плаунова](https://up.htmlacademy.ru/htmlcss/36/user/2095675).
-* Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080)
+* Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080).
 
 ---
 
