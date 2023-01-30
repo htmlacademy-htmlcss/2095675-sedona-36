@@ -9,12 +9,12 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="navigation-link-logo" href="index.html">
-          <img class="navigatiol-image-logo" src="#" alt="Логотип туристического сайта города Седона.">
+        <a class="navigation-logo-link">
+          <img class="navigatiol-logo-image" src="#" alt="Логотип туристического сайта города Седона.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
 
           <li class="navigation-item">
@@ -22,7 +22,7 @@
           </li>
 
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
@@ -63,8 +63,8 @@
             </li>
           </ul>
         </header>
-        <h2 class="visually-hidden calatog-filter">Фильтр</h2>
-        <form method="get" action="https://echo.htmlacademy.ru/">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <form class="calatog-filter" method="get" action="https://echo.htmlacademy.ru/">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="calatog-filter-list">
@@ -136,7 +136,7 @@
       <section class="catalog">
         <header class="catalog-header">
           <h2 class="calatog-title">Найдено гостиниц: <span class="product-amount">38</span></h2>
-          <select class="select-priority" name="select-priority" aria-label="Сортировка">
+          <select class="catalog-sort" name="catalog-sort" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="popular">Сначала популярные</option>
             <option value="expensive">Сначала дорогие</option>
@@ -254,8 +254,8 @@
           <p class="subscribe-description small-text">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <input class="subcsribe-email" type="email" name="subcsribe-email" placeholder="Ваш e-mail">
-          <button class="button submit-button" type="submit">Подписаться</button>
+          <input class="subcsribe-input" type="email" name="subcsribe-input" placeholder="Ваш e-mail">
+          <button class="button subcsribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
