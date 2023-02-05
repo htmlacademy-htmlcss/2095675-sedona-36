@@ -18,4 +18,75 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.main-navigation {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navigation-link {
+  color: inherit;
+  text-decoration: none;
+  text-align: left;
+
+}
+
+.hero {
+  background: #82B3D3 url(../image/decor-image/index-background.jpg) no-repeat 50% 50%;
+  background-size: 100% auto;
+}
+
+.big-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.small-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-list {
+  list-style-type: none;
+}
+
+.advantages-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.advantages-description {
+  text-align: center;
+  color: #ffffff;
+}
+
+.advantages-detail-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-detail-description {
+  color: #333333;
+  text-align: center;
+}
+
+.advantages-detail-list {
+  background-color: rgba(131, 179, 211, 0.12);
+  list-style-type: none;
 }
