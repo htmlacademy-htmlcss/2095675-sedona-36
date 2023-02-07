@@ -20,7 +20,27 @@ body {
   line-height: 21px;
   background: #ffffff;
   color: #000000;
+  margin: 0;
 }
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756157;
+  color: #ffffff;
+}
+
+.button-blue,
+.product-card-button {
+  background-color: #82B3D3;
+}
+
+/* header */
 
 .main-navigation {
   font-weight: 700;
@@ -28,16 +48,22 @@ body {
   line-height: 24px;
 }
 
+.navigation-list {
+  margin: 0;
+  list-style-type: none;
+}
+
 .navigation-link {
   color: inherit;
   text-decoration: none;
   text-align: left;
-
 }
+
+/* main */
 
 .hero {
   background: #82B3D3 url(../image/decor-image/index-background.jpg) no-repeat 50% 50%;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .big-text {
@@ -55,8 +81,14 @@ body {
   color: #333333;
 }
 
+/* advantages */
+
 .advantages-list {
   list-style-type: none;
+}
+
+.advantages-item {
+  background-color: #82B3D3;
 }
 
 .advantages-subtitle {
@@ -87,6 +119,40 @@ body {
 }
 
 .advantages-detail-list {
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+.advantages-detail-item {
+background-color: rgba(131, 179, 211, 0.12)
+}
+
+.advantages-detail-item-road {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* benefits */
+
+.benefins-list {
   background-color: rgba(131, 179, 211, 0.12);
   list-style-type: none;
+}
+
+.benefits-item-food {
+  background-color: #ffffff;
+}
+
+/* subscribe */
+
+.subscribe-index{
+background: #82B3D3 url(../image/decor-image/subscribe-background.jpg) no-repeat 50% 50%;
+background-size: cover;
+}
+
+.subscribe-text-white {
+  color: #ffffff;
+}
+
+.subcsribe-input {
+  line-height: 24px;
 }
