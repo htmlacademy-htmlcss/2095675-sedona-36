@@ -35,9 +35,30 @@ body {
   color: #ffffff;
 }
 
+.main-navigation .button {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
 .button-blue,
 .product-card-button {
   background-color: #82B3D3;
+}
+
+.catalog-filter-submit-button,
+.product-card-button,
+.product-card-link {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-filter-reset-button {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: transparent;
+  border: none;
 }
 
 .product-card-button-current {
@@ -83,6 +104,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  font-weight: 400;
 }
 
 /* advantages */
@@ -146,6 +168,10 @@ body {
   background-color: #ffffff;
 }
 
+.benefits-description {
+  color: #333333;
+}
+
 /* subscribe */
 
 .subscribe-index {
@@ -158,7 +184,10 @@ body {
 }
 
 .subcsribe-input {
+  font-family: inherit;
   line-height: 24px;
+  font-size: 18px;
+  color: #000000;
 }
 
 /* footer */
@@ -202,6 +231,13 @@ body {
   font-weight: 700;
 }
 
+.catalog-filter-price-input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
 /* catalog */
 
 .calatog-title {
@@ -213,8 +249,8 @@ body {
 
 .catalog-sort {
   font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /* product-card */
@@ -227,7 +263,9 @@ body {
   text-decoration: none;
 }
 
-.product-card-item span {
+.product-card-type,
+.product-card-price,
+.product-card-rating {
   color: #333333;
 }
 
@@ -246,6 +284,7 @@ body {
   text-transform: uppercase;
 }
 
+/* pagination */
 
 .pagination-list {
   list-style-type: none;
