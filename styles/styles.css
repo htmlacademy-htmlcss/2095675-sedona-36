@@ -14,13 +14,20 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background: #ffffff;
   color: #000000;
-  margin: 0;
 }
 
 .button {
@@ -85,6 +92,10 @@ body {
 }
 
 /* main */
+
+.main-container {
+  flex-grow: 1;
+}
 
 .hero {
   background: #82B3D3 url("../image/decor-image/index-background.jpg") no-repeat 50% 50%;
