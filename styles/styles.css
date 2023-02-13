@@ -78,7 +78,6 @@ body {
   background-color: #7DB54F;
 }
 
-/*
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -91,8 +90,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-*/
 
 /* header */
 
@@ -163,7 +160,7 @@ body {
 /* advantages */
 
 .advantages-text-wrapper {
-  width: 651px;
+  padding: 0 250px;
   margin: 0 auto;
 }
 
@@ -204,13 +201,12 @@ body {
 }
 
 .advantages-description {
-  padding: 0 85px;
   text-align: center;
   color: #ffffff;
+  padding: 0 85px;
 }
 
 .advantages-detail-subtitle {
-  padding: 0 85px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -244,7 +240,7 @@ body {
 /* benefits */
 
 .benefits-text-wrapper {
-  width: 505px;
+  padding: 0 350px;
   margin: 0 auto;
 }
 
@@ -264,7 +260,7 @@ body {
 }
 
 .benefits-item-wrapper {
-padding: 0 30px;
+  padding: 0 30px;
 }
 
 .benefits-item-food {
@@ -275,16 +271,15 @@ padding: 0 30px;
   color: #333333;
 }
 
-.search {
-  width: 592px;
+.search-wrapper {
+  padding: 0 305px;
   margin: 0 auto;
 }
 
 /* subscribe */
 
-.subscribe-title,
-.subscribe-description {
-  width: 475px;
+.subscribe-text-wrapper{
+  padding: 0 362px;
   margin: 0 auto;
 }
 
@@ -309,6 +304,7 @@ padding: 0 30px;
   font-size: 18px;
   color: #000000;
   width: 452px;
+  box-sizing: border-box;
 }
 
 /* footer */
@@ -344,14 +340,20 @@ padding: 0 30px;
   line-height: 78px;
 }
 
+/* filter */
+
 .filter-box {
   background: #82B3D3 url("../image/decor-image/filter-background.jpg") no-repeat 50% 50%;
   background-size: cover;
   color: #ffffff;
   line-height: 23px;
+  padding: 0 70px;
 }
 
 .breadcrumbs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 21px;
 }
@@ -359,6 +361,23 @@ padding: 0 30px;
 .breadcrumbs-link {
   text-decoration: none;
   color: inherit;
+}
+
+.calatog-filter {
+  display: flex;
+  width: 1060px;
+}
+
+.catalog-filter-group {
+  margin-left: 0;
+  margin-right: 70px;
+  padding: 0;
+}
+
+.calatog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-title {
@@ -374,6 +393,10 @@ padding: 0 30px;
   font-weight: 700;
 }
 
+.catalog-filter-price-slider {
+  display: block;
+}
+
 /* catalog */
 
 .calatog-title {
@@ -382,6 +405,7 @@ padding: 0 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 
 .catalog-sort {
   font-family: inherit;
