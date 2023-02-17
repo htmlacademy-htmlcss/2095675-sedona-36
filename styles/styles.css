@@ -204,6 +204,10 @@ body {
   background-color: #82B3D3;
 }
 
+.advantages-item-revers {
+  flex-direction: row-reverse;
+}
+
 .advantages-subtitle {
   margin-top: 0;
 }
@@ -275,8 +279,17 @@ body {
 /* benefits */
 
 .benefits-text-wrapper {
-  padding: 0 350px;
+  padding: 64px 350px;
   margin: 0 auto;
+}
+
+.benefits-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.benefits-text.small-text {
+  margin-bottom: 0;
 }
 
 .benefins-list {
@@ -292,30 +305,55 @@ body {
   width: 400px;
   text-align: center;
   padding: 0 85px;
-}
-
-.benefits-item-wrapper {
-  padding: 0 30px;
+  padding-top: 183px;
+  padding-bottom: 81px;
+  min-height: 121px;
 }
 
 .benefits-item-food {
   background-color: #ffffff;
 }
 
+.benefits-subtitle {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .benefits-description {
+  margin-top: 0;
+  margin-bottom: 0;
   color: #333333;
 }
 
-.search-wrapper {
-  padding: 0 305px;
+.search {
+  padding: 96px 305px;
   margin: 0 auto;
+}
+
+.search-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.search-text.small-text {
+  margin-bottom: 54px;
 }
 
 /* subscribe */
 
-.subscribe-text-wrapper {
-  padding: 0 362px;
+.subscribe {
+  padding: 96px 258px 104px;
   margin: 0 auto;
+}
+
+.subscribe-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe-description {
+  margin-top: 0;
+  margin-bottom: 54px;
 }
 
 .subscribe-index {
@@ -331,6 +369,11 @@ body {
   display: flex;
   width: 684px;
   margin: 0 auto;
+  min-height: 52px;
+}
+
+.subcsribe-button {
+  width: 232px;
 }
 
 .subcsribe-input {
