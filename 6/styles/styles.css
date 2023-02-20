@@ -459,11 +459,10 @@ body {
   background-size: cover;
   color: #ffffff;
   line-height: 23px;
-  padding: 0 70px 70px;
+  padding: 35px 70px 70px;
 }
 
 .inner-header {
-  padding-top: 35px;
   margin-bottom: 40px;
 }
 
@@ -582,8 +581,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: 0 70px 80px;
-  padding: 0;
+  margin: 0;
+  padding: 0 70px 40px;
   gap: 20px;
 }
 
@@ -656,8 +655,8 @@ body {
 .pagination-list {
   display: flex;
   list-style-type: none;
-  margin: 0 70px 60px;
-  padding: 0;
+  padding: 40px 70px 60px;
+  margin: 0;
 }
 
 .pagination-item {
