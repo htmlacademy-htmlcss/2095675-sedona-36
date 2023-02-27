@@ -48,6 +48,11 @@ body {
   text-transform: uppercase;
   background-color: #756157;
   color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 50px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .main-navigation .button {
@@ -55,11 +60,23 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  padding: 8px 34px;
+  margin-top: 14px;
 }
 
 .button-blue,
 .product-card-button {
   background-color: #82B3D3;
+}
+
+.search-button {
+  max-width: 376px;
+  margin: 0 auto;
+}
+
+.subcsribe-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .catalog-filter-submit-button,
