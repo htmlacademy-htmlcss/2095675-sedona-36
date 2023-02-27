@@ -161,6 +161,16 @@ body {
   box-sizing: border-box;
 }
 
+.user-menu-list .user-menu-item:first-of-type .user-menu-link {
+  background: url('../image/decor-image/search-icon.svg') no-repeat center;
+  background-size: 18px 18px;
+}
+
+.user-menu-list .user-menu-item:nth-of-type(2) .user-menu-link {
+  background: url('../image/decor-image/heart-icon.svg') no-repeat center;
+  background-size: 18px 18px;
+}
+
 /* main */
 
 .main-container {
