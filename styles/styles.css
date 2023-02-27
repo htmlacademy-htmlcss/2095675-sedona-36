@@ -464,6 +464,18 @@ body {
   text-align: center;
 }
 
+.contacts-tel:hover {
+  color: #756157;
+}
+
+.contacts-tel:focus {
+  color: #756157;
+}
+
+.contacts-tel:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .htmlacademy-link {
   display: block;
   margin-left: auto;
