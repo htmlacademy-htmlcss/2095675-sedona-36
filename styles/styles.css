@@ -137,6 +137,20 @@ body {
   width: 440px;
 }
 
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #756257;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+}
+
 .user-menu-list {
   width: 300px;
   margin-left: auto;
@@ -337,9 +351,7 @@ body {
 .benefits-item {
   width: 400px;
   text-align: center;
-  padding: 0 85px;
-  padding-top: 183px;
-  padding-bottom: 81px;
+  padding: 80px 85px 81px;
   min-height: 121px;
 }
 
@@ -350,6 +362,42 @@ body {
 .benefits-subtitle {
   margin-top: 0;
   margin-bottom: 30px;
+  position: relative;
+  padding-top: 100px;
+  text-transform: uppercase;
+}
+
+.benefins-list .benefits-item:first-of-type .benefits-subtitle::before {
+  content: "";
+  position: absolute;
+  background: url("../image/decor-image/benefits-icon-1.svg") no-repeat;
+  width: 74px;
+  height: 72px;
+  top: 2px;
+  left: 50%;
+  margin-left: -37px;
+}
+
+.benefins-list .benefits-item:nth-of-type(2) .benefits-subtitle::before {
+  content: "";
+  position: absolute;
+  background: url("../image/decor-image/benefits-icon-2.svg") no-repeat;
+  width: 74px;
+  height: 70px;
+  top: 2px;
+  left: 50%;
+  margin-left: -37px;
+}
+
+.benefins-list .benefits-item:nth-of-type(3) .benefits-subtitle::before {
+  content: "";
+  position: absolute;
+  background: url("../image/decor-image/benefits-icon-3.svg") no-repeat;
+  width: 64px;
+  height: 76px;
+  top: 0;
+  left: 50%;
+  margin-left: -37px;
 }
 
 .benefits-description {
@@ -357,6 +405,8 @@ body {
   margin-bottom: 0;
   color: #333333;
 }
+
+/* search */
 
 .search {
   padding: 96px 305px;
@@ -449,6 +499,18 @@ body {
   box-sizing: border-box;
 }
 
+.social-list .social-item:first-child .social-link {
+  background: url('../image/decor-image/social-vk.svg') no-repeat center;
+}
+
+.social-list .social-item:nth-of-type(2) .social-link {
+  background: url('../image/decor-image/social-telegram.svg') no-repeat center;
+}
+
+.social-list .social-item:nth-of-type(3) .social-link {
+  background: url('../image/decor-image/social-youtube.svg') no-repeat center;
+}
+
 .contacts {
   width: 720px;
   align-self: center;
@@ -462,6 +524,8 @@ body {
   text-decoration: none;
   color: #000000;
   text-align: center;
+  width: 332px;
+  margin: 0 auto;
 }
 
 .contacts-tel:hover {
@@ -480,6 +544,19 @@ body {
   display: block;
   margin-left: auto;
   align-self: center;
+  color:#000000
+}
+
+.htmlacademy-link:hover .htmlacademy-logo {
+  color: #756157;
+}
+
+.htmlacademy-link:focus .htmlacademy-logo {
+  color: #756157;
+}
+
+.htmlacademy-link:active .htmlacademy-logo {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* inner */
