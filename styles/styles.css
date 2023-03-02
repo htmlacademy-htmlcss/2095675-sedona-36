@@ -889,6 +889,7 @@ margin-left: -30px;
   color: #ffffff;
   text-decoration: none;
   padding: 12px 24px;
+  border-radius: 4px;
 }
 
 .pagination-link-current {
@@ -899,4 +900,19 @@ margin-left: -30px;
 .pagination-link-show-more {
   color: #000000;
   background-color: inherit;
+}
+
+.pagination-item .pagination-link:not(.pagination-link-current):hover {
+  background-color: #68A2CA;
+}
+
+
+.pagination-item .pagination-link:not(.pagination-link-current):focus {
+  background-color: #68A2CA;
+}
+
+
+.pagination-item .pagination-link:not(.pagination-link-current):active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
