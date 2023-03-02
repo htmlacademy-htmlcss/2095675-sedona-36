@@ -86,6 +86,11 @@ body {
   line-height: 20px;
 }
 
+.product-card-link.button,
+.product-card-button.button {
+  padding: 8px 20px;
+}
+
 .catalog-filter-reset-button {
   font-size: 16px;
   line-height: 20px;
@@ -93,8 +98,9 @@ body {
   border: none;
 }
 
-.product-card-button-current {
+.product-card-button.button.product-card-button-current {
   background-color: #7DB54F;
+  padding: 8px 18px;
 }
 
 .visually-hidden {
@@ -649,10 +655,35 @@ margin-left: -30px;
   padding: 0;
   font-size: 16px;
   line-height: 21px;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-item:not(:last-child) {
   margin-right: 28px;
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:focus {
+  opacity: 1;
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  background: url("../image/decor-image/breadcrumbs-arrow-icon.svg") no-repeat 50% 50%;
+  width: 6px;
+  height: 10px;
+  top: 50%;
+  margin-top: -5px;
+  left: 23px;
 }
 
 .breadcrumbs-link {
@@ -661,6 +692,10 @@ margin-left: -30px;
   color: inherit;
   min-height: 21px;
   min-width: 12px;
+}
+
+.breadcrumbs-item:first-child .breadcrumbs-link {
+  background: url("../image/decor-image/home-icon.svg") no-repeat 50% 50%;
 }
 
 .calatog-filter {
@@ -820,6 +855,8 @@ margin-left: -30px;
   text-align: center;
   text-transform: uppercase;
   background-color: #F2F2F2;
+  padding: 8px 18px;
+  border-radius: 4px;
 }
 
 /* pagination */
