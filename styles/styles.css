@@ -830,7 +830,6 @@ margin-left: -30px;
 
 .catalog-sort:active {
   border: 2px solid #3F5E72;
-
 }
 
 .view-type-list {
@@ -957,6 +956,31 @@ margin-left: -30px;
 
 .product-card-price {
   text-align: right;
+}
+
+/* stars */
+
+.product-card-stars-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card-star {
+  width: 18px;
+  height: 17px;
+  position: relative;
+  margin-right: 6px;
+}
+
+.product-card-star::after {
+  content: "";
+  position: absolute;
+  background: url("../image/content-image/star-icon.svg") no-repeat 50% 50%;
+  top: 10px;
+  width: 18px;
+  height: 17px;
 }
 
 .product-card-rating {
