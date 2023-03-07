@@ -35,6 +35,7 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -363,8 +364,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  margin-bottom: 0;
-  padding-bottom: 30px;
+  margin-bottom: 60px;
+
 }
 
 .advantages-subtitle::after {
@@ -372,7 +373,7 @@ content: "";
 position: absolute;
 height: 2px;
 width: 60px;
-bottom: 0;
+top: 88px;
 background-color: rgba(255, 255, 255, 0.3);
 left: 50%;
 margin-left: -30px;
@@ -381,19 +382,17 @@ margin-left: -30px;
 .advantages-description {
   text-align: center;
   color: #ffffff;
-  padding-top: 30px;
 }
 
 .advantages-detail-subtitle {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 60px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 32px;
 }
 
 .advantages-detail-subtitle::after {
@@ -401,7 +400,7 @@ margin-left: -30px;
   position: absolute;
   height: 2px;
   width: 60px;
-  bottom: 0;
+  top: 88px;
   background-color: rgba(0, 0, 0, 0.3);
   left: 50%;
   margin-left: -30px;
@@ -410,7 +409,6 @@ margin-left: -30px;
 .advantages-detail-description {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 30px;
   color: #333333;
   text-align: center;
 }
@@ -960,27 +958,22 @@ margin-left: -30px;
 
 /* stars */
 
-.product-card-stars-list {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.product-card-stars {
+  align-self: center;
+  background: url("../image/decor-image/star-icon.svg") space 50% 50%;
+  height: 17px;
 }
 
-.product-card-star {
-  width: 18px;
-  height: 17px;
-  position: relative;
-  margin-right: 6px;
+.product-card-stars-4 {
+  width: 80px;
 }
 
-.product-card-star::after {
-  content: "";
-  position: absolute;
-  background: url("../image/decor-image/star-icon.svg") no-repeat 50% 50%;
-  top: 10px;
-  width: 18px;
-  height: 17px;
+.product-card-stars-3 {
+  width: 60px;
+}
+
+.product-card-stars-2 {
+  width: 40px;
 }
 
 .product-card-rating {
