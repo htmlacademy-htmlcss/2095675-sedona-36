@@ -385,14 +385,14 @@ body {
 }
 
 .advantages-subtitle::after {
-content: "";
-position: absolute;
-height: 2px;
-width: 60px;
-top: 88px;
-background-color: rgba(255, 255, 255, 0.3);
-left: 50%;
-margin-left: -30px;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  top: 88px;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 50%;
+  margin-left: -30px;
 }
 
 .advantages-description {
@@ -676,7 +676,7 @@ margin-left: -30px;
   display: block;
   margin-left: auto;
   align-self: center;
-  color:#000000
+  color: #000000
 }
 
 .htmlacademy-link:hover .htmlacademy-logo {
@@ -741,13 +741,72 @@ margin-left: -30px;
 
 .modal-search-form {
   display: grid;
-  
+  grid-template-columns: 136px 247px auto auto auto;
+  grid-template-rows: repeat(3, 48px);
+  row-gap: 48px;
 }
 
 .modal-search-label {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-transform: capitalize;
+  align-self: center;
+}
+
+.modal-search-date-label,
+.modal-search-adult-label {
+  grid-column: 1/2;
+}
+
+.modal-search-input {
+  box-sizing: border-box;
+  height: 48px;
+  background-color: #F2F2F2;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal-search-input-date {
+  padding: 12px 20px;
+  width: 440px;
+  border-radius: 4px;
+}
+
+.modal-search-input-wraper {
+  display: flex;
+}
+
+.modal-search-scale-button {
+  width: 40px;
+  height: 48px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+.input-adult-number,
+.input-child-number {
+  width: 30px;
+  text-align: center;
+}
+
+.input-child-number::-webkit-outer-spin-button,
+.input-child-number::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.input-adult-number::-webkit-outer-spin-button,
+.input-adult-number::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.modal-search-button {
+  grid-column: 1/-1;
 }
 
 /* inner */
@@ -1106,15 +1165,15 @@ margin-left: -30px;
   border: 2px solid #000000;
 }
 
-.view-type-list .view-type-item:first-child .view-type-link{
+.view-type-list .view-type-item:first-child .view-type-link {
   background: url("../image/decor-image/view-icon-1.svg") no-repeat 50% 50%;
 }
 
-.view-type-list .view-type-item:nth-child(2) .view-type-link{
+.view-type-list .view-type-item:nth-child(2) .view-type-link {
   background: url("../image/decor-image/view-icon-2.svg") no-repeat 50% 50%;
 }
 
-.view-type-list .view-type-item:nth-child(3) .view-type-link{
+.view-type-list .view-type-item:nth-child(3) .view-type-link {
   background: url("../image/decor-image/view-icon-3.svg") no-repeat 50% 50%;
 }
 

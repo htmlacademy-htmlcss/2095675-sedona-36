@@ -205,25 +205,30 @@
           </button>
           <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="get">
 
-            <label class="modal-search-label">
-              Дата заезда:
-              <input class="modal-search-input" name="date-in-input" type="text" value="27 апреля 2020">
-            </label>
+            <label class="modal-search-label modal-search-date-label" for="date-in-input">Дата заезда:</label>
+            <input class="modal-search-input modal-search-input-date" id="date-in-input" name="date-in-input"
+              type="text" value="27 апреля 2020">
 
-            <label class="modal-search-label">
-              Дата выезда:
-              <input class="modal-search-input" name="date-out-input" type="text" value="1 сентября 2023">
-            </label>
+            <label class="modal-search-label modal-search-date-label" for="date-out-input">Дата выезда:</label>
+            <input class="modal-search-input modal-search-input-date" id="date-out-input" name="date-out-input"
+              type="text" value="1 сентября 2023">
 
-            <label class="modal-search-label">
-              Взрослые:
-              <input class="modal-search-input" type="number" name="adult" value="2">
-            </label>
 
-            <label class="modal-search-label">
-              Дети:
-              <input class="modal-search-input" type="number" name="adult" value="2">
-            </label>
+            <label class="modal-search-label modal-search-adult-label" for="adult">Взрослые:</label>
+            <div class=" modal-search-input-wraper">
+              <button class="modal-search-scale-button  modal-search-adult-more"></button>
+              <input class="modal-search-input input-adult-number" type="number" id="adult" name="adult" value="2">
+              <button class="modal-search-scale-button  modal-search-adult-more"></button>
+            </div>
+
+            <label class="modal-search-label modal-search-child-label" for="child">Дети:</label>
+            <div class=" modal-search-input-wraper">
+              <button class="modal-search-scale-button  modal-search-child-less"></button>
+              <input class="modal-search-input input-child-number" type="number" id="child" name="child" value="2">
+              <button class="modal-search-scale-button modal-search-child-more"></button>
+            </div>
+
+            <button class="modal-search-button button button-blue" type="submit">Найти</button>
           </form>
         </section>
       </div>
