@@ -730,6 +730,21 @@ body {
   right: 52px;
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  outline: none;
+  opacity: 0.4;
+}
+
 .modal-title {
   font-weight: 700;
   font-size: 30px;
@@ -741,8 +756,8 @@ body {
 
 .modal-search-form {
   display: grid;
-  grid-template-columns: 136px 247px auto auto auto;
-  grid-template-rows: repeat(3, 48px);
+  grid-template-columns: 137px 198px auto 111px;
+  grid-template-rows: repeat(3, 48px) 60px;
   row-gap: 48px;
 }
 
@@ -774,6 +789,7 @@ body {
   padding: 12px 20px;
   width: 440px;
   border-radius: 4px;
+  background: #F2F2F2 url("../image/decor-image/calendar-icon.svg") no-repeat 402px center;
 }
 
 .modal-search-input-wraper {
@@ -785,8 +801,19 @@ body {
   height: 48px;
   box-sizing: border-box;
   border: none;
-  background-color: #F2F2F2;
   cursor: pointer;
+}
+
+.modal-search-adult-less,
+.modal-search-child-less {
+  background: #F2F2F2 url("../image/decor-image/minus-icon.svg") no-repeat 50% 50%;
+  border-radius: 4px 0 0 4px;
+}
+
+.modal-search-child-more,
+.modal-search-adult-more {
+  background: #F2F2F2 url("../image/decor-image/plus-icon.svg") no-repeat 50% 50%;
+  border-radius: 0 4px 4px 0;
 }
 
 .input-adult-number,
@@ -805,8 +832,18 @@ body {
   appearance: none;
 }
 
+.tooltip-button {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background: #83B3D3 url("../image/decor-image/info-icon.svg") no-repeat 50% 50%;
+}
+
 .modal-search-button {
   grid-column: 1/-1;
+  border-radius: 10px;
 }
 
 /* inner */
