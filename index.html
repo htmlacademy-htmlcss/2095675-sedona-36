@@ -197,7 +197,8 @@
           </svg>
         </a>
       </footer>
-      <div class="modal-container">
+
+      <div class="modal-container modal-container-close">
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <button class="modal-close-button" type="button">
@@ -206,13 +207,18 @@
           <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="get">
 
             <label class="modal-search-label modal-search-date-label" for="date-in-input">Дата заезда:</label>
-            <input class="modal-search-input modal-search-input-date" id="date-in-input" name="date-in" type="text"
-              value="27 апреля 2020">
+            <div class="modal-search-date-in-wraper">
+              <input class="modal-search-input modal-search-input-date" id="date-in-input" name="date-in" type="text"
+                value="27 апреля 2020" placeholder="Укажите дату">
+              <span class="modal-eror-text">Мы не можем отправить вас в прошлое.</span>
+            </div>
 
             <label class="modal-search-label modal-search-date-label" for="date-out-input">Дата выезда:</label>
-            <input class="modal-search-input modal-search-input-date" id="date-out-input" name="date-out" type="text"
-              value="1 сентября 2023">
-
+            <div class="modal-search-date-out-wraper">
+              <input class="modal-search-input modal-search-input-date" id="date-out-input" name="date-out" type="text"
+                value="1 сентября 2023" placeholder="Укажите дату">
+              <span class="modal-info-text">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
 
             <label class="modal-search-label modal-search-adult-label" for="adult">Взрослые:</label>
             <div class=" modal-search-input-wraper">
@@ -223,8 +229,11 @@
 
             <span class="modal-search-child-label">
               <label class="modal-search-label modal-search-child-label" for="child">Дети:</label>
-              <button class="tooltip-button" type="button"></button>
-              <span class="tooltip-text"></span>
+              <span class="tooltip">
+                <button class="tooltip-button" type="button"></button>
+                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                  лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
             </span>
             <div class=" modal-search-input-wraper">
               <button class="modal-search-scale-button  modal-search-child-less"></button>

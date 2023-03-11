@@ -704,6 +704,10 @@ body {
   z-index: 2;
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal-content {
   position: relative;
   margin: auto;
@@ -785,11 +789,41 @@ body {
   line-height: 24px;
 }
 
+.modal-search-date-in-wraper,
+.modal-search-date-out-wraper {
+  position: relative;
+  width: 440px;
+}
+
 .modal-search-input-date {
   padding: 12px 20px;
   width: 440px;
   border-radius: 4px;
   background: #F2F2F2 url("../image/decor-image/calendar-icon.svg") no-repeat 402px center;
+}
+
+.modal-info-text {
+  position: absolute;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  display: block;
+  width: 440px;
+  margin-top: 4px;
+  top: 100%;
+  padding-left: 20px;
+}
+
+.modal-eror-text {
+  position: absolute;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+  display: block;
+  width: 440px;
+  margin-top: 4px;
+  top: 100%;
+  padding-left: 20px;
 }
 
 .modal-search-input-wraper {
@@ -832,6 +866,23 @@ body {
   appearance: none;
 }
 
+.modal-search-button {
+  grid-column: 1/-1;
+  border-radius: 10px;
+}
+
+.modal-search-child-label {
+  position: relative;
+  display: block;
+  align-self: center;
+}
+
+.tooltip {
+  position: absolute;
+  left: 60px;
+  top: 0;
+}
+
 .tooltip-button {
   display: block;
   width: 26px;
@@ -841,9 +892,68 @@ body {
   background: #83B3D3 url("../image/decor-image/info-icon.svg") no-repeat 50% 50%;
 }
 
-.modal-search-button {
-  grid-column: 1/-1;
+.tooltip-text {
+  display: none;
+  position: absolute;
+  width: 256px;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 15px 22px 18px 22px;
+  top: 100%;
+  margin-top: 15px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.tooltip-button:hover + .tooltip-text {
+  display: block;
+}
+
+.tooltip-button:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 9px;
+  background: url("../image/decor-image/tooltip-corner.svg") no-repeat 50% 50%;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal-search-scale-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-search-input:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-search-scale-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-search-input:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-search-input-date:placeholder-shown {
+  background-color: #F2F2F2;
+  outline: 2px solid #000000;
+}
+
+.modal-search-input-date:disabled {
+  opacity: 0.3;
+  outline: none;
 }
 
 /* inner */
