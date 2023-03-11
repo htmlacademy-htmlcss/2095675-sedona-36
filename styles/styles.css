@@ -597,6 +597,14 @@ body {
   color: #000000;
   width: 452px;
   box-sizing: border-box;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  padding: 14px 20px;
+  background: #F2F2F2;
+}
+
+.subcsribe-input:disabled {
+  opacity: 0.5;
 }
 
 /* footer */
@@ -1117,13 +1125,26 @@ body {
   opacity: 0.6;
 }
 
-.catalog-filter-label:focus span {
+.catalog-filter-checkbox:focus + .catalog-filter-checkbox-mark {
+  opacity: 1;
+  outline: 3px solid #83B3D3;
+}
+
+.catalog-filter-radio:focus + .catalog-filter-radio-mark {
   opacity: 1;
   outline: 3px solid #83B3D3;
 }
 
 .catalog-filter-label:active {
   opacity: 0.3;
+}
+
+.catalog-filter-group input:disabled {
+  opacity: 0.5;
+}
+
+.catalog-filter-price-input:placeholder-shown {
+  outline: 2px solid #000000;
 }
 
 .catalog-filter-price-input-wraper {
