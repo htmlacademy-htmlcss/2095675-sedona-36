@@ -230,8 +230,8 @@
             <span class="modal-search-child-label">
               <label class="modal-search-label modal-search-child-label" for="child">Дети:</label>
               <span class="tooltip">
-                <button class="tooltip-button" type="button"></button>
-                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                <button class="tooltip-button" type="button" aria-labelledby="tooltip-text-label"></button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-text-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
                   лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
             </span>
@@ -240,7 +240,6 @@
               <input class="modal-search-input input-child-number" type="number" id="child" name="child" value="2">
               <button class="modal-search-scale-button modal-search-child-more"></button>
             </div>
-
             <button class="modal-search-button button button-blue" type="submit">Найти</button>
           </form>
         </section>
