@@ -435,6 +435,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .advantages-item-text-wrapper {
@@ -443,7 +444,7 @@ body {
 }
 
 .advantages-detail-item {
-  width: 250px;
+  width: 240px;
   padding: 102px 80px;
   min-height: 180px;
   background-color: rgba(131, 179, 211, 0.12)
@@ -476,6 +477,7 @@ body {
   padding: 0;
   background-color: rgba(131, 179, 211, 0.12);
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .benefits-item {
@@ -483,6 +485,7 @@ body {
   text-align: center;
   padding: 80px 85px 81px;
   min-height: 121px;
+  box-sizing: border-box;
 }
 
 .benefits-item-food {
@@ -1038,7 +1041,8 @@ body {
   height: 10px;
   top: 50%;
   margin-top: -5px;
-  left: 23px;
+  right: 0;
+  margin-right: -17px;
 }
 
 .breadcrumbs-link {
@@ -1336,6 +1340,7 @@ body {
   margin-left: auto;
   width: 160px;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .view-type-item {
@@ -1350,8 +1355,8 @@ body {
 
 .view-type-link {
   display: block;
-  height: 48px;
-  width: 48px;
+  height: 44px;
+  width: 44px;
   box-sizing: border-box;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
