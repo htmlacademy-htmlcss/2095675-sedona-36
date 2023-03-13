@@ -202,7 +202,7 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <button class="modal-close-button" type="button">
-            <span class="visually-hidden">Закрыть</span>
+            <span class="visually-hidden">Закрыть.</span>
           </button>
           <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -210,10 +210,11 @@
             <div class="modal-search-date-in-wraper">
               <input class="modal-search-input modal-search-input-date" id="date-in-input" name="date-in" type="text"
                 value="27 апреля 2020" placeholder="Укажите дату">
-              <span class="modal-eror-text">Мы не можем отправить вас в прошлое.</span>
+              <span class="modal-info-text modal-error-text">Мы не можем отправить вас в прошлое.</span>
             </div>
 
-            <label class="modal-search-label modal-search-date-label" for="date-out-input">Дата выезда:</label>
+            <label class="modal-search-label modal-search-date-label date-out-label" for="date-out-input">Дата
+              выезда:</label>
             <div class="modal-search-date-out-wraper">
               <input class="modal-search-input modal-search-input-date" id="date-out-input" name="date-out" type="text"
                 value="1 сентября 2023" placeholder="Укажите дату">
@@ -221,24 +222,33 @@
             </div>
 
             <label class="modal-search-label modal-search-adult-label" for="adult">Взрослые:</label>
-            <div class=" modal-search-input-wraper">
-              <button class="modal-search-scale-button  modal-search-adult-less"></button>
+            <div class="modal-search-input-wraper modal-search-adult-wraper">
+              <button class="modal-search-scale-button  modal-search-adult-less" type="button">
+                <span class="visually-hidden">Уменьшить количество взрослых.</span>
+              </button>
               <input class="modal-search-input input-adult-number" type="number" id="adult" name="adult" value="2">
-              <button class="modal-search-scale-button  modal-search-adult-more"></button>
+              <button class="modal-search-scale-button  modal-search-adult-more" type="button">
+                <span class="visually-hidden">Увеличить количество взрослых.</span>
+              </button>
             </div>
 
             <span class="modal-search-child-label">
               <label class="modal-search-label modal-search-child-label" for="child">Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-button" type="button" aria-labelledby="tooltip-text-label"></button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-text-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                <span class="tooltip-text" role="tooltip" id="tooltip-text-label">Укажите количество детей, которые
+                  будут с вами, возраст которых от 6 до 18
                   лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
             </span>
-            <div class=" modal-search-input-wraper">
-              <button class="modal-search-scale-button  modal-search-child-less"></button>
+            <div class=" modal-search-input-wraper modal-search-child-wraper">
+              <button class="modal-search-scale-button  modal-search-child-less" type="button">
+                <span class="visually-hidden">Уменьшить количество детей.</span>
+              </button>
               <input class="modal-search-input input-child-number" type="number" id="child" name="child" value="2">
-              <button class="modal-search-scale-button modal-search-child-more"></button>
+              <button class="modal-search-scale-button modal-search-child-more" type="button">
+                <span class="visually-hidden">Увеличить количество детей.</span>
+              </button>
             </div>
             <button class="modal-search-button button button-blue" type="submit">Найти</button>
           </form>
