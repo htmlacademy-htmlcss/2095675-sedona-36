@@ -439,7 +439,7 @@ body {
 
 .advantages-item-text-wrapper {
   width: 230px;
-  padding: 102px 85px;
+  padding: 101px 85px;
 }
 
 .advantages-detail-item {
@@ -1418,8 +1418,8 @@ body {
   box-sizing: border-box;
   width: 340px;
   padding: 20px;
-  row-gap: 20px;
-  column-gap: 16px;
+  row-gap: 16px;
+  column-gap: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
@@ -1506,6 +1506,17 @@ body {
   list-style-type: none;
   padding: 40px 70px 60px;
   margin: 0;
+  position: relative;
+}
+
+.pagination-list::before {
+  position: absolute;
+  content: "";
+  transform: rotate(180deg);
+  width: 1060px;
+  height: 1px;
+  background-color: #E6E6E6;
+  top: 0;
 }
 
 .pagination-item {
